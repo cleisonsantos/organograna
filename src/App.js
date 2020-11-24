@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+import logo from './logo.svg'
+import { Logo } from './styles'
+import GlobalStyle from './globalStyles'
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <div >
-      <header >
-        <img src={logo} alt="logo" />
-      </header>
-    </div>
+    <Fragment>
+    <GlobalStyle />
+        <Logo src={logo} />
+    </Fragment>
   );
 }
 
